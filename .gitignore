@@ -1,0 +1,35 @@
+# Local environments and generated Python files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Production history, local verification, and network logs
+data/baselines/
+data/snapshots/
+data/diffs/
+logs/
+work/
+tests/output/
+
+# Streamlit runtime state and secrets
+.streamlit/cache/
+.streamlit/secrets.toml
+.cache/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Temporary downloads and raw HTML
+*.tmp
+*.temp
+*.html
+*.htm

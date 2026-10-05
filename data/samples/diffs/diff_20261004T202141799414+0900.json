@@ -1,0 +1,599 @@
+{
+  "schema_version": "1B.1",
+  "compared_at": "2026-10-04T20:21:41.799414+09:00",
+  "run_status": "SUCCESS",
+  "previous_snapshot": {
+    "path": "baselines/baseline_20261003T074806266523+0900.json",
+    "fetched_at": "2026-10-03T07:48:18.165724+09:00",
+    "snapshot_type": "BASELINE"
+  },
+  "current_snapshot": {
+    "path": "snapshots/snapshot_20261004T202127241900+0900.json",
+    "fetched_at": "2026-10-04T20:21:28.345977+09:00",
+    "snapshot_type": "SNAPSHOT"
+  },
+  "summary": {
+    "total_previous": 15,
+    "total_current": 15,
+    "unchanged": 15,
+    "new": 0,
+    "updated": 0,
+    "not_listed": 0,
+    "duplicate": 0,
+    "missing": 0,
+    "ambiguous_identity": 0
+  },
+  "events": [
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:09a7fdb910b7fd80a4f5dd1a705efaf8a7e6afed11af2f50a1b05d77062179a0",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 13,
+          "stable_key": "procurement_number:968dc8ac4f9a1fe062fc73b6903c63c1fe53ab140747a6a3c82ebf707475cc33",
+          "identity_key": "procurement_number:09a7fdb910b7fd80a4f5dd1a705efaf8a7e6afed11af2f50a1b05d77062179a0",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度政府共通決済基盤の利用拡大に向けた調査研究業務",
+          "procurement_number": "0000000000000614449",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-08-28",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000614449&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "8086fff9495121806f681e4592aa6d3978b73c5da5623535fe869718f004354e"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 13,
+          "stable_key": "procurement_number:968dc8ac4f9a1fe062fc73b6903c63c1fe53ab140747a6a3c82ebf707475cc33",
+          "identity_key": "procurement_number:09a7fdb910b7fd80a4f5dd1a705efaf8a7e6afed11af2f50a1b05d77062179a0",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度政府共通決済基盤の利用拡大に向けた調査研究業務",
+          "procurement_number": "0000000000000614449",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-08-28",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000614449&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "8086fff9495121806f681e4592aa6d3978b73c5da5623535fe869718f004354e"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:224e2fb49fb09555e652b189850c96d5059e63e400292c3681ff041e256daa4b",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 2,
+          "stable_key": "procurement_number:38c903b382753ac7074005cc0bc9dc5e4fb4b328ca8f962db52d033774339a9a",
+          "identity_key": "procurement_number:224e2fb49fb09555e652b189850c96d5059e63e400292c3681ff041e256daa4b",
+          "identity_strategy": "procurement_number",
+          "title": "国家資格等情報連携・活用システムの利用拡大に伴う機能強化及び性能改善に係る設計・開発業務",
+          "procurement_number": "0000000000000607587",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-09-11",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000607587&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "bbce7f40de0b1f11cdeeb82b8f89558421dd999922502c8c0f37ea33a1bab14a"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 2,
+          "stable_key": "procurement_number:38c903b382753ac7074005cc0bc9dc5e4fb4b328ca8f962db52d033774339a9a",
+          "identity_key": "procurement_number:224e2fb49fb09555e652b189850c96d5059e63e400292c3681ff041e256daa4b",
+          "identity_strategy": "procurement_number",
+          "title": "国家資格等情報連携・活用システムの利用拡大に伴う機能強化及び性能改善に係る設計・開発業務",
+          "procurement_number": "0000000000000607587",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-09-11",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000607587&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "bbce7f40de0b1f11cdeeb82b8f89558421dd999922502c8c0f37ea33a1bab14a"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:22cbcb36d9cefec29a3d53e40893fa0870269b32adfaee2cd9b9cbc81f9a827b",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 3,
+          "stable_key": "procurement_number:24357cd0341eec63706f40d5843354ab728c16e6f0b9c69b7e0a846305568339",
+          "identity_key": "procurement_number:22cbcb36d9cefec29a3d53e40893fa0870269b32adfaee2cd9b9cbc81f9a827b",
+          "identity_strategy": "procurement_number",
+          "title": "ガバメントクラウドに係る情報セキュリティ監査業務（令和8年度）",
+          "procurement_number": "0000000000000619006",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-09-10",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000619006&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "16ee8a6063a88545c553d9fe55f4521a19fb92c55caf448a7f882fc654c704ef"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 3,
+          "stable_key": "procurement_number:24357cd0341eec63706f40d5843354ab728c16e6f0b9c69b7e0a846305568339",
+          "identity_key": "procurement_number:22cbcb36d9cefec29a3d53e40893fa0870269b32adfaee2cd9b9cbc81f9a827b",
+          "identity_strategy": "procurement_number",
+          "title": "ガバメントクラウドに係る情報セキュリティ監査業務（令和8年度）",
+          "procurement_number": "0000000000000619006",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-09-10",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000619006&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "16ee8a6063a88545c553d9fe55f4521a19fb92c55caf448a7f882fc654c704ef"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:2c7ecd09fe934441bea37da6d82c0535b40a0831dcbb28d9ccfb90a2de431e25",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 15,
+          "stable_key": "procurement_number:701fa05b3f12c1c65959e85281b61568ea3502648508d7c47459ddd01b8b9ccb",
+          "identity_key": "procurement_number:2c7ecd09fe934441bea37da6d82c0535b40a0831dcbb28d9ccfb90a2de431e25",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度ガバメントソリューションサービスのヘルプデスクサービス",
+          "procurement_number": "0000000000000582555",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-07-23",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000582555&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "0622661fb2b8a4c63b6b8874b72a5479faf349e86bbb7c0739d3dd1c6dfac502"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 15,
+          "stable_key": "procurement_number:701fa05b3f12c1c65959e85281b61568ea3502648508d7c47459ddd01b8b9ccb",
+          "identity_key": "procurement_number:2c7ecd09fe934441bea37da6d82c0535b40a0831dcbb28d9ccfb90a2de431e25",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度ガバメントソリューションサービスのヘルプデスクサービス",
+          "procurement_number": "0000000000000582555",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-07-23",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000582555&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "0622661fb2b8a4c63b6b8874b72a5479faf349e86bbb7c0739d3dd1c6dfac502"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:325b019395a3490ac9f845d9b1fe709f89643904aaf8468c4ffb6524dd2175af",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 12,
+          "stable_key": "procurement_number:5e53822c1ebf470c225875c84e1cb5f2976fd858ee0559dc374e0ceea0302075",
+          "identity_key": "procurement_number:325b019395a3490ac9f845d9b1fe709f89643904aaf8468c4ffb6524dd2175af",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度ガバメントソリューションサービスにおける開発端末の調達",
+          "procurement_number": "0000000000000617937",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-08-31",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000617937&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "2338774973a173be07fc01c2779a4e7a0409f738c72da7cfeb5d0e48a595248f"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 12,
+          "stable_key": "procurement_number:5e53822c1ebf470c225875c84e1cb5f2976fd858ee0559dc374e0ceea0302075",
+          "identity_key": "procurement_number:325b019395a3490ac9f845d9b1fe709f89643904aaf8468c4ffb6524dd2175af",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度ガバメントソリューションサービスにおける開発端末の調達",
+          "procurement_number": "0000000000000617937",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-08-31",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000617937&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "2338774973a173be07fc01c2779a4e7a0409f738c72da7cfeb5d0e48a595248f"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:340fd4a34e485e60f57802f6c108c504a52726d62f343840e81446c986dbc0e0",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 6,
+          "stable_key": "procurement_number:b6d078415ee7ae83a36fc39b413984a6255fabae37285aca0620c3b64eafe2d4",
+          "identity_key": "procurement_number:340fd4a34e485e60f57802f6c108c504a52726d62f343840e81446c986dbc0e0",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度から令和9年度 旅費等内部管理業務共通システムの運用業務",
+          "procurement_number": "0000000000000607695",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-09-04",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000607695&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "3b70810c9ab4c1e51c4142b9a7ea05f958af8e9c619d4ed6cf46e9df7caca5cf"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 6,
+          "stable_key": "procurement_number:b6d078415ee7ae83a36fc39b413984a6255fabae37285aca0620c3b64eafe2d4",
+          "identity_key": "procurement_number:340fd4a34e485e60f57802f6c108c504a52726d62f343840e81446c986dbc0e0",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度から令和9年度 旅費等内部管理業務共通システムの運用業務",
+          "procurement_number": "0000000000000607695",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-09-04",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000607695&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "3b70810c9ab4c1e51c4142b9a7ea05f958af8e9c619d4ed6cf46e9df7caca5cf"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:657ad06edd4a74ac379bda8f9d4aede7b7d550f4b284d9dff1ca5f9580e73b1c",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 14,
+          "stable_key": "procurement_number:3e208312144860540fba61ea1f8d62265af73d92473b562704abdcbbddf3a39a",
+          "identity_key": "procurement_number:657ad06edd4a74ac379bda8f9d4aede7b7d550f4b284d9dff1ca5f9580e73b1c",
+          "identity_strategy": "procurement_number",
+          "title": "自治体情報システムに関する情報の取得・管理・活用方法の検討に係る調査検討業務",
+          "procurement_number": "0000000000000618012",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-08-25",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000618012&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "6f56661b085a8edcdee2187d4799e8d1023249903bc657e97fa8d184543582b5"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 14,
+          "stable_key": "procurement_number:3e208312144860540fba61ea1f8d62265af73d92473b562704abdcbbddf3a39a",
+          "identity_key": "procurement_number:657ad06edd4a74ac379bda8f9d4aede7b7d550f4b284d9dff1ca5f9580e73b1c",
+          "identity_strategy": "procurement_number",
+          "title": "自治体情報システムに関する情報の取得・管理・活用方法の検討に係る調査検討業務",
+          "procurement_number": "0000000000000618012",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-08-25",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000618012&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "6f56661b085a8edcdee2187d4799e8d1023249903bc657e97fa8d184543582b5"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:6a290b46e5eb4c66ce4e8f293e113d6b606f45e93c4c145dc5f88ab309dfa38d",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 7,
+          "stable_key": "procurement_number:a770fb2a4fd9bd8d3618bf66526b5113fea9bfb17770b2ef7d08fde1208b8f42",
+          "identity_key": "procurement_number:6a290b46e5eb4c66ce4e8f293e113d6b606f45e93c4c145dc5f88ab309dfa38d",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度eラーニング「情報セキュリティ基礎」の教材改修に係る請負",
+          "procurement_number": "0000000000000620524",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-09-04",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000620524&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "3018a7c02af137b72f77d842f2c3871f80c5a5625456ba0aa82a96f350d7ca57"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 7,
+          "stable_key": "procurement_number:a770fb2a4fd9bd8d3618bf66526b5113fea9bfb17770b2ef7d08fde1208b8f42",
+          "identity_key": "procurement_number:6a290b46e5eb4c66ce4e8f293e113d6b606f45e93c4c145dc5f88ab309dfa38d",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度eラーニング「情報セキュリティ基礎」の教材改修に係る請負",
+          "procurement_number": "0000000000000620524",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-09-04",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000620524&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "3018a7c02af137b72f77d842f2c3871f80c5a5625456ba0aa82a96f350d7ca57"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:7ad3d1caeba679e1e20175360b191498416aec385a7fa6f0c7baa2dc85686c46",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 5,
+          "stable_key": "procurement_number:edbca63134ffd18f26ca3310e781bcb84c3a88c172e1738226029511fa41f66f",
+          "identity_key": "procurement_number:7ad3d1caeba679e1e20175360b191498416aec385a7fa6f0c7baa2dc85686c46",
+          "identity_strategy": "procurement_number",
+          "title": "ガバメントクラウドへの移行加速に向けた調査研究業務（令和8年度）",
+          "procurement_number": "0000000000000620723",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-09-07",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000620723&cla=3&chankbn=1&chancnt=0&lan=1",
+          "content_hash": "a9eb9f9fe2739f82d80b549d770400893e59126d34334b20c0e78e2db39eb3ce"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 5,
+          "stable_key": "procurement_number:edbca63134ffd18f26ca3310e781bcb84c3a88c172e1738226029511fa41f66f",
+          "identity_key": "procurement_number:7ad3d1caeba679e1e20175360b191498416aec385a7fa6f0c7baa2dc85686c46",
+          "identity_strategy": "procurement_number",
+          "title": "ガバメントクラウドへの移行加速に向けた調査研究業務（令和8年度）",
+          "procurement_number": "0000000000000620723",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-09-07",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000620723&cla=3&chankbn=1&chancnt=0&lan=1",
+          "content_hash": "a9eb9f9fe2739f82d80b549d770400893e59126d34334b20c0e78e2db39eb3ce"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:837ca5452f3e48102063280082b1e19e17241421e6cd0d682479191edfdfb7db",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 11,
+          "stable_key": "procurement_number:2a779de6da3fb7c0206bea1870c868edceb1c445cbaa4c52fe762d22234fe7f4",
+          "identity_key": "procurement_number:837ca5452f3e48102063280082b1e19e17241421e6cd0d682479191edfdfb7db",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度刑事手続のIT化に係る通信サービス用機器等の保守及び運用監視等",
+          "procurement_number": "0000000000000600211",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-08-31",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000600211&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "fb123786ac863c7eb510262efe5710ecb3d58d86989dc7c51be1b491b7c3dc6c"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 11,
+          "stable_key": "procurement_number:2a779de6da3fb7c0206bea1870c868edceb1c445cbaa4c52fe762d22234fe7f4",
+          "identity_key": "procurement_number:837ca5452f3e48102063280082b1e19e17241421e6cd0d682479191edfdfb7db",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度刑事手続のIT化に係る通信サービス用機器等の保守及び運用監視等",
+          "procurement_number": "0000000000000600211",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-08-31",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000600211&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "fb123786ac863c7eb510262efe5710ecb3d58d86989dc7c51be1b491b7c3dc6c"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:a7de27696e48bea9b439e2a0535738f8823c5f503c995e3f3646f499a3bd4914",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 1,
+          "stable_key": "procurement_number:5a98aebbbcf08a41ad5bef0eaeaae3e4c28390ec73e89b97423fe788b5f08e4c",
+          "identity_key": "procurement_number:a7de27696e48bea9b439e2a0535738f8823c5f503c995e3f3646f499a3bd4914",
+          "identity_strategy": "procurement_number",
+          "title": "自治体情報システムの運用最適化の実現に向けた複数自治体で連携した知見共有及び運用最適化実施の方法に係る調査検討業務",
+          "procurement_number": "0000000000000621786",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-09-14",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000621786&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "dda007e2611a2bf314ca0c43d731a6cecf842de794e78808c2638bcc641ea049"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 1,
+          "stable_key": "procurement_number:5a98aebbbcf08a41ad5bef0eaeaae3e4c28390ec73e89b97423fe788b5f08e4c",
+          "identity_key": "procurement_number:a7de27696e48bea9b439e2a0535738f8823c5f503c995e3f3646f499a3bd4914",
+          "identity_strategy": "procurement_number",
+          "title": "自治体情報システムの運用最適化の実現に向けた複数自治体で連携した知見共有及び運用最適化実施の方法に係る調査検討業務",
+          "procurement_number": "0000000000000621786",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-09-14",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000621786&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "dda007e2611a2bf314ca0c43d731a6cecf842de794e78808c2638bcc641ea049"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:a9ce46e1121e86f6087fcc029d86f7d3a89908f261df6dbaecbaee41f138ed5f",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 9,
+          "stable_key": "procurement_number:9f31b2696832c544b2129865542045373306eff25006821db2cc374b322a58b7",
+          "identity_key": "procurement_number:a9ce46e1121e86f6087fcc029d86f7d3a89908f261df6dbaecbaee41f138ed5f",
+          "identity_strategy": "procurement_number",
+          "title": "公共サービスメッシュ機関間情報連携サービスへの移行促進に資する機能改修",
+          "procurement_number": "0000000000000607523",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-09-03",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000607523&cla=3&chankbn=1&chancnt=1&lan=1",
+          "content_hash": "5af405019fe900a93dd1308da3e04202c71639e7cf712c3067cf178ec799a147"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 9,
+          "stable_key": "procurement_number:9f31b2696832c544b2129865542045373306eff25006821db2cc374b322a58b7",
+          "identity_key": "procurement_number:a9ce46e1121e86f6087fcc029d86f7d3a89908f261df6dbaecbaee41f138ed5f",
+          "identity_strategy": "procurement_number",
+          "title": "公共サービスメッシュ機関間情報連携サービスへの移行促進に資する機能改修",
+          "procurement_number": "0000000000000607523",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-09-03",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000607523&cla=3&chankbn=1&chancnt=1&lan=1",
+          "content_hash": "5af405019fe900a93dd1308da3e04202c71639e7cf712c3067cf178ec799a147"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:d0de9ea2da4e3df59575134068b19abf1703afcbf56091f20e081eb183f6734f",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 10,
+          "stable_key": "procurement_number:3e963fcb8c642828d17df977ddf231fc7454ac357d30da1df8ba9c0a747c7aab",
+          "identity_key": "procurement_number:d0de9ea2da4e3df59575134068b19abf1703afcbf56091f20e081eb183f6734f",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度フィードバック収集に基づいたデジタル庁デザインシステムの改善運用に係る調査",
+          "procurement_number": "0000000000000618931",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-09-01",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000618931&cla=3&chankbn=1&chancnt=0&lan=1",
+          "content_hash": "baf59920b156d19f617ab07fa09591a22d89386bed691a378f160ce02a125e5f"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 10,
+          "stable_key": "procurement_number:3e963fcb8c642828d17df977ddf231fc7454ac357d30da1df8ba9c0a747c7aab",
+          "identity_key": "procurement_number:d0de9ea2da4e3df59575134068b19abf1703afcbf56091f20e081eb183f6734f",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度フィードバック収集に基づいたデジタル庁デザインシステムの改善運用に係る調査",
+          "procurement_number": "0000000000000618931",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-09-01",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000618931&cla=3&chankbn=1&chancnt=0&lan=1",
+          "content_hash": "baf59920b156d19f617ab07fa09591a22d89386bed691a378f160ce02a125e5f"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:d5fde4ee03e974ef6e561bcb3313382b1083e80492bde9e0d932e5f3fd0b24f4",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 8,
+          "stable_key": "procurement_number:c7a4c963f54ab0c3716ca279e26a02e110c5d04fef7054ec8a0eedc67fdd8ebf",
+          "identity_key": "procurement_number:d5fde4ee03e974ef6e561bcb3313382b1083e80492bde9e0d932e5f3fd0b24f4",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度 社会のデジタル化意識に係る調査研究事業",
+          "procurement_number": "0000000000000620012",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-09-04",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000620012&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "f1eed2a53bc2e907a38c2491b898a89f2d88ceffd27fcb4a0b30a8ca27ff1121"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 8,
+          "stable_key": "procurement_number:c7a4c963f54ab0c3716ca279e26a02e110c5d04fef7054ec8a0eedc67fdd8ebf",
+          "identity_key": "procurement_number:d5fde4ee03e974ef6e561bcb3313382b1083e80492bde9e0d932e5f3fd0b24f4",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度 社会のデジタル化意識に係る調査研究事業",
+          "procurement_number": "0000000000000620012",
+          "notice_type": "入札公告（WTO対象外）",
+          "posted_date": "2026-09-04",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000620012&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "f1eed2a53bc2e907a38c2491b898a89f2d88ceffd27fcb4a0b30a8ca27ff1121"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    },
+    {
+      "status": "UNCHANGED",
+      "identity_key": "procurement_number:edf5e50b7d3c0a39ddc1a8abfbce20a777f2a05c775ff0f1c7ce21b6d9cafbdb",
+      "identity_strategy": "procurement_number",
+      "identity_strategies": [
+        "procurement_number"
+      ],
+      "previous": [
+        {
+          "record_index": 4,
+          "stable_key": "procurement_number:8a508de63553299fa08b149dbe8d7f9eea547d2eb5465b8afdb04ed0d38787a5",
+          "identity_key": "procurement_number:edf5e50b7d3c0a39ddc1a8abfbce20a777f2a05c775ff0f1c7ce21b6d9cafbdb",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度刑事手続のIT化に係る通信サービス（専用線サービス）の提供及び保守等（再度公告）",
+          "procurement_number": "0000000000000619502",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-09-10",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000619502&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "de999b12907b6e93210f08fae2f8118602ec567ced1bb926a8ac301c386ae464"
+        }
+      ],
+      "current": [
+        {
+          "record_index": 4,
+          "stable_key": "procurement_number:8a508de63553299fa08b149dbe8d7f9eea547d2eb5465b8afdb04ed0d38787a5",
+          "identity_key": "procurement_number:edf5e50b7d3c0a39ddc1a8abfbce20a777f2a05c775ff0f1c7ce21b6d9cafbdb",
+          "identity_strategy": "procurement_number",
+          "title": "令和8年度刑事手続のIT化に係る通信サービス（専用線サービス）の提供及び保守等（再度公告）",
+          "procurement_number": "0000000000000619502",
+          "notice_type": "入札公告（WTO対象）",
+          "posted_date": "2026-09-10",
+          "detail_url": "https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0122?anken=0000000000000619502&cla=3&chankbn=0&chancnt=0&lan=1",
+          "content_hash": "de999b12907b6e93210f08fae2f8118602ec567ced1bb926a8ac301c386ae464"
+        }
+      ],
+      "changed_fields": {},
+      "reason": null
+    }
+  ],
+  "errors": []
+}
