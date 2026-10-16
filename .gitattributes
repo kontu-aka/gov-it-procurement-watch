@@ -1,0 +1,2 @@
+# This test verifies the exact SHA-256 of the committed fixture bytes.
+tests/fixtures/phase1a_baseline_copy.json text eol=lf
