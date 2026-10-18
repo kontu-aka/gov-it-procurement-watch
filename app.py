@@ -27,9 +27,12 @@ st.html(f"<style>{(ROOT / 'assets/dashboard.css').read_text(encoding='utf-8')}</
 st.sidebar.html('<div class="brand-mark"><span class="brand-icon">G / PA</span><span>政府調達データ<br>分析ツール</span></div>')
 st.sidebar.subheader("表示するデータ")
 
+public_sample_only = globals().get("PUBLIC_SAMPLE_ONLY", False) is True
 demo_mode = st.sidebar.checkbox(
-    "公開サンプルで表示（オフライン）", value="--demo" in sys.argv, key="demo_mode",
+    "公開サンプルで表示（オフライン）", value=public_sample_only or "--demo" in sys.argv,
+    key="demo_mode", disabled=public_sample_only,
 )
+demo_mode = public_sample_only or demo_mode
 data_root = ROOT / "data" / "samples" if demo_mode else DATA_ROOT
 loaded = load_latest_baseline(data_root)
 st.sidebar.html('<p class="sidebar-note">保存済みデータを表示します。<br>画面操作による再取得は行いません。</p>')

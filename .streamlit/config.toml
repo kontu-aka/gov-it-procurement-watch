@@ -3,7 +3,7 @@ gatherUsageStats = false
 
 [server]
 headless = true
-address = "127.0.0.1"
+# Cloud uses the default bind address. Local runs must pass --server.address 127.0.0.1.
 
 [theme]
 base = "light"

@@ -9,7 +9,7 @@
 
 制作目的は、一覧の目視確認を、再現できる取得・検証・比較・表示の流れにすることです。
 デジタル庁公式サービスではありません。AI分類・LLM・外部詳細本文の解析は行っていません。
-ローカルGitで管理しています。Webへのホスティングは未実施です。
+Web公開用の入口（`cloud_app.py`）は公開サンプルだけを表示します。
 
 ## 画面
 
@@ -52,13 +52,21 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip check
 
 # 同梱サンプルの15件・2世代比較を表示。データ取得は行わない
-.\.venv\Scripts\python.exe -m streamlit run app.py -- --demo
+.\.venv\Scripts\python.exe -m streamlit run app.py --server.address 127.0.0.1 --browser.serverAddress 127.0.0.1 -- --demo
 ```
 
-検証環境はPython 3.12.14、Streamlit 1.65.0、requests 2.34.2、beautifulsoup4 4.15.0。
+Windowsでの検証環境はPython 3.12.x、Streamlit 1.65.0、requests 2.34.2、beautifulsoup4 4.15.0。
 直接依存は`requirements.txt`、検証した依存バージョンは`requirements-lock.txt`に固定しています。
 lockはWindows／Python 3.12で検証した組み合わせです。
-接続先は`127.0.0.1`、通常ポートは8501。利用統計送信は無効です。
+ローカル起動時は上記の`--server.address 127.0.0.1 --browser.serverAddress 127.0.0.1`を指定します（端末内だけで接続）。通常ポートは8501です。
+クラウドと共通のconfigでは待受アドレスを固定していません。フラグを省くとLAN側にも待受し、Streamlit自身が外部IP確認の問い合わせを行う場合があります。
+この問い合わせはアプリによる調達情報取得とは別です。通信遮断を保証する設定ではありません。
+ユーザー設定を手動で行う場合の参考と、設定の優先順位は[ローカル起動の注意](docs/COMMUNITY_CLOUD.md#ローカルでの確認)を参照してください。
+利用統計送信はローカル設定で無効です。Community Cloud側の上書きについては下記手順を参照してください。
+
+Streamlit Community Cloudへの公開準備・設定・公開後の手動確認は
+[公開手順](docs/COMMUNITY_CLOUD.md)を参照してください。公開専用の入口は`cloud_app.py`です。
+公開サンプル（2026年10月3日・4日、15件）に固定し、ローカルの実取得データは読み込みません。
 
 ## 手動で取得・保存・比較する
 
@@ -79,20 +87,21 @@ $current = Read-Host "今回の正常snapshot JSONのパス"
 .\.venv\Scripts\python.exe src\diff_engine.py $previous $current --output-dir data\diffs
 
 # data/に保存したsnapshotとdiffを表示
-.\.venv\Scripts\python.exe -m streamlit run app.py
+.\.venv\Scripts\python.exe -m streamlit run app.py --server.address 127.0.0.1 --browser.serverAddress 127.0.0.1
 ```
 
 取得は1回のコマンドで1回だけ実行されます。初回は`BASELINE`、以後は`SNAPSHOT`として保存し、既存ファイルを上書きしません。
 取得・validationに失敗した場合、正常snapshotは保存しません。
 保存データがない場合は理由を表示し、サンプルを実取得データとして自動代用しません。
-画面の「公開サンプルで表示（オフライン）」から明示的に切り替えられます。
+ローカルの`app.py`では画面の「公開サンプルで表示（オフライン）」から明示的に切り替えられます。
+公開用の`cloud_app.py`では公開サンプルに固定されます。
 
 仮想環境を有効化した後は、OS共通の`python`コマンドでも実行できます。
 次は同梱する実在ファイルを使った**取得なし**の差分生成例です。出力は公開サンプルを変更せず`work/demo-diffs/`へ保存します。
 
 ```sh
 python src/diff_engine.py data/samples/baselines/baseline_20261003T074806266523+0900.json data/samples/snapshots/snapshot_20261004T202127241900+0900.json --output-dir work/demo-diffs
-python -m streamlit run app.py -- --demo
+python -m streamlit run app.py --server.address 127.0.0.1 --browser.serverAddress 127.0.0.1 -- --demo
 python -B -m unittest discover -s tests -v
 ```
 
@@ -152,11 +161,14 @@ content_hashは機関、区分、案件名、掲載日、更新日、案件番�
 # 保存データ／公開サンプルと合成差分の画面テスト
 .\.venv\Scripts\python.exe -B tests\streamlit_app_checks.py
 
+# 公開サンプル専用入口の画面・混入防止テスト
+.\.venv\Scripts\python.exe -B tests\cloud_app_checks.py
+
 # 再取得保護テストだけを単独実行
 .\.venv\Scripts\python.exe -B tests\test_phase1d.py
 ```
 
-単体テスト73件とAppTest 7件で、取得・解析・保存保護、identity、時間順、CLI、可搬な参照、検索・フィルター・差分表示を確認します。
+単体テスト77件、既存AppTest 7件、公開用AppTest 11件で、取得・解析・保存保護、identity、時間順、CLI、可搬な参照、検索・フィルター・差分表示と公開データの分離を確認します。
 合成差分の画面テストは`NEW`／`UPDATED`／`NOT_LISTED`／`AMBIGUOUS_IDENTITY`を含むテスト専用データを使います。実サイトで観測した差分ではありません。
 CLIは正常系、逆順、同一ファイル、入力欠落、壊れたJSON、validation失敗を確認します。
 
@@ -170,7 +182,7 @@ CLIは正常系、逆順、同一ファイル、入力欠落、壊れたJSON、v
 |判定|SUCCESS／NO CHANGE|
 |BASELINE保護|SHA-256前後一致|
 
-**実データで非ゼロ差分はまだ観測していません。** 実データの観測結果と合成テストの結果を区別しています。
+公開サンプルの比較結果と、合成データによる非ゼロ差分テストの結果を区別しています。
 検証日時・条件・結果は[検証記録](docs/VERIFICATION.md)にまとめています。
 BASELINE SHA-256：`E6B21073A160611256FA4F8B94FF7FE1E0A803E5607467A560BA89BB8A697E95`。
 
@@ -178,11 +190,12 @@ BASELINE SHA-256：`E6B21073A160611256FA4F8B94FF7FE1E0A803E5607467A560BA89BB8A69
 
 ```text
 app.py                  ダッシュボード
+cloud_app.py            公開サンプル専用の入口
 src/                    取得・差分・表示ロジック
 tests/                  単体／画面テスト、公開一覧由来fixture、合成データ生成
 data/samples/           2世代のオフライン表示用実データコピー
 docs/                   検証記録、公開対象方針、画面画像
-.streamlit/config.toml  ローカル接続・利用統計無効の設定
+.streamlit/config.toml  共通テーマ・ローカル利用統計無効の設定
 requirements*.txt       依存関係
 ```
 
@@ -197,5 +210,5 @@ requirements*.txt       依存関係
 - 番号の恒久的一意性は保証せず、fallbackの案件名・日付訂正はidentityの再確認が必要です。
 - キーワード集計はUnicode正規化後の部分文字列集計で、公式カテゴリやAI分類ではありません。
 - サンプルは過去の15件です。現在の調達状況や実非ゼロ差分の観測実績を示しません。
-- 定期実行・通知・外部本文取得・PDF解析・Webホスティングは未実施です。
-- Python 3.12／Windowsで検証しています。他OSでの同等検証は未実施です。
+- 定期実行・通知・外部本文取得・PDF解析は実装していません。
+- Windows／Python 3.12の検証に加え、Linux／Python 3.12.3でのオフライン検証結果があります。Cloud環境のビルド・HTTPS・休止復帰は、デプロイ環境で確認してください。

@@ -1,13 +1,13 @@
 # 公開対象とローカル保存データ
 
-ローカルGitの初期化と初回commitは完了しています。Webへのホスティングは未実施です。
+公開用の入口（`cloud_app.py`）は、Git管理された公開サンプルだけを表示します。
 以下は公開用の管理対象と、端末内だけに保持するデータの分類です。
 
 |対象|分類|理由・扱い|
 |---|---|---|
-|`app.py`、`src/`|公開用|実装。秘密情報や端末固有の個人パスを含めない|
+|`app.py`、`cloud_app.py`、`src/`|公開用|実装。秘密情報や端末固有の個人パスを含めない|
 |`tests/*.py`、`tests/fixtures/`|公開用|オフライン検証。実データ由来fixtureとテスト専用合成データを区別|
-|README、requirements、lock、`.streamlit/config.toml`|公開用|再現手順・依存・秘密設定を含まないローカル設定|
+|README、requirements、lock、`.streamlit/config.toml`|公開用|再現手順・依存・秘密設定を含まない共通設定|
 |`data/samples/`|公開用|検証済み2世代のコピー。出典・PDL1.0・取得日時を保持|
 |`docs/`、`docs/screenshots/`|公開用|検証概要と保存データの画面。ユーザー名や秘密情報を含めない|
 |本番`data/baselines/`、`data/snapshots/`、`data/diffs/`|除外・ローカル保持|基準・履歴保護。過去のdiff原本には端末の絶対パスがある|

@@ -14,5 +14,5 @@ https://www.digital.go.jp/resources/open_data/public_data_license_v1.0
 外部詳細ページ本文、PDF、担当者情報、ロゴ、認証情報は含めていません。
 PDL1.0を本プロジェクトのコードの利用ライセンスと混同しないでください。
 
-ローカル起動：`.venv` のPythonで `-m streamlit run app.py -- --demo`。
-公開サンプルは明示的に選択した場合だけ表示し、本番候補には混在させません。
+ローカル起動：`.venv` のPythonで `-m streamlit run app.py --server.address 127.0.0.1 --browser.serverAddress 127.0.0.1 -- --demo`。
+公開サンプルは明示的に選択した場合だけ表示し、実取得データとは混在させません。
